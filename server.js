@@ -5,6 +5,7 @@ const PORT = process.env.PORT || 3030
 const server = app.listen(PORT, () => console.log(`Listening on ${PORT}\n`))
 
 const messages = [
+  
   {
     channel: "1",
     account: "0xcA8Fa8f0b631EcdB18Cda619C4Fc9d197c8aFfCa",
@@ -60,7 +61,7 @@ const io = new Server(server, {
 })
 
 io.on('connection', (socket) => {
-  console.log('a user connected')
+  console.log('a user connected');
 
   socket.on('get messages', () => {
     io.emit('get messages', messages)

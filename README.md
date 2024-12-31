@@ -1,4 +1,4 @@
-# Dappcord
+# PrivyLink
 
 ## Technology Stack & Tools
 
